@@ -38,7 +38,7 @@
 #
 ##################################################################
 use Getopt::Long;
-Getopt::Long::Configure ("posix_default", "no_ignore_case");
+Getopt::Long::Configure ("posix_default", "no_ignore_case", "permute");
 use File::Path qw(mkpath rmtree);
 use File::Temp qw(tempdir);
 use File::Basename qw(dirname basename);
