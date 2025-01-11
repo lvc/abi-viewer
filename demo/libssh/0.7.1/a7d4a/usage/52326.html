@@ -1,0 +1,54 @@
+<!-- object:libssh.so.4.4.0;arch:x86_64;type:int(*)(DSA*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BN_CTX*, BN_MONT_CTX*);total:1 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="int(*)(DSA*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BN_CTX*, BN_MONT_CTX*), used, field, parameter, types, symbols" />
+    <meta name="description" content="Usage of type in the library" />
+    <link rel="stylesheet" type="text/css" href="../css/report.css" />
+    <script type="text/javascript" src="../js/sort.js"></script>
+    
+    <title>
+        Usage: int(*)(DSA*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BN_CTX*, BN_MONT_CTX*)
+    </title>
+    
+    </head><body>
+<h1 align='center'>libssh.so 0.7.1 (x86_64)</h1><table cellpadding='0' cellspacing='0'><tr><td align='center'><h1 class='tool'><a href='http://abi-laboratory.pro/' class='tool'>ABI<br/>Viewer</a></h1></td><td width='40px'></td><td><a class='menu' href='../symbols.html'>Symbols</a></td><td><a class='menu' href='../types.html'>Types</a></td><td><a class='menu' href='../live-readelf.html'>Live Readelf</a></td></tr></table><hr/><br/><br/><h1 style='max-width:1024px; word-wrap:break-word;'>Type Usage:&nbsp;<a class='black' href='../types/52326.html'>int(*)(DSA*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BN_CTX*, BN_MONT_CTX*)</a> (1)</h1>
+<br/>
+<!-- content -->
+<table id='List' cellpadding='3' class='summary highlight'>
+<tr>
+<th class='sort' onclick='sort(this)' title='sort'>Used As</th>
+<th class='sort' onclick='sort(this)' title='sort'>Name</th>
+<th class='sort' onclick='sort(this)' title='sort'>Used In</th>
+</tr>
+<tr class='pointer' onclick="document.location='../types/21a9f.html'">
+<td align='center' class='stack_param'>
+FIELD</td>
+<td align='center' class='s'>
+<span class='field'>.dsa_mod_exp</span></td>
+<td class='s top'>struct dsa_method {
+    char const* <span class='prm'>name</span>,
+    DSA_SIG*(*)(unsigned char const*, int, DSA*) <span class='prm'>dsa_do_sign</span>,
+    int(*)(DSA*, BN_CTX*, BIGNUM**, BIGNUM**) <span class='prm'>dsa_sign_setup</span>,
+    int(*)(unsigned char const*, int, DSA_SIG*, DSA*) <span class='prm'>dsa_do_verify</span>,
+    int(*)(DSA*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BIGNUM*, BN_CTX*, BN_MONT_CTX*) <span class='prm highlighted'>dsa_mod_exp</span>,
+    int(*)(DSA*, BIGNUM*, BIGNUM*, BIGNUM const*, BIGNUM const*, BN_CTX*, BN_MONT_CTX*) <span class='prm'>bn_mod_exp</span>,
+    int(*)(DSA*) <span class='prm'>init</span>,
+    int(*)(DSA*) <span class='prm'>finish</span>,
+    int <span class='prm'>flags</span>,
+    char* <span class='prm'>app_data</span>,
+    int(*)(DSA*, int, unsigned char const*, int, int*, unsigned long*, BN_GENCB*) <span class='prm'>dsa_paramgen</span>,
+    int(*)(DSA*) <span class='prm'>dsa_keygen</span>
+} <a class='info' href='../types/21a9f.html'>&raquo;</a>
+</td>
+</tr>
+</table>
+<!-- content end -->
+<br/>
+<br/>
+<hr/>
+<div align='right'><a class='home' href='http://abi-laboratory.pro/'>Andrey Ponomarenko's ABI laboratory</a></div>
+<br/>
+</body>
+</html>

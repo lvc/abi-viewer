@@ -1,0 +1,94 @@
+<!-- object:libssh.so.4.4.0;arch:x86_64;type:int(*)(char const*, char*, size_t, int, int, void*);total:4 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="int(*)(char const*, char*, size_t, int, int, void*), used, field, parameter, types, symbols" />
+    <meta name="description" content="Usage of type in the library" />
+    <link rel="stylesheet" type="text/css" href="../css/report.css" />
+    <script type="text/javascript" src="../js/sort.js"></script>
+    
+    <title>
+        Usage: int(*)(char const*, char*, size_t, int, int, void*)
+    </title>
+    
+    </head><body>
+<h1 align='center'>libssh.so 0.7.1 (x86_64)</h1><table cellpadding='0' cellspacing='0'><tr><td align='center'><h1 class='tool'><a href='http://abi-laboratory.pro/' class='tool'>ABI<br/>Viewer</a></h1></td><td width='40px'></td><td><a class='menu' href='../symbols.html'>Symbols</a></td><td><a class='menu' href='../types.html'>Types</a></td><td><a class='menu' href='../live-readelf.html'>Live Readelf</a></td></tr></table><hr/><br/><br/><h1 style='max-width:1024px; word-wrap:break-word;'>Type Usage:&nbsp;<a class='black' href='../types/ed9f6.html'>int(*)(char const*, char*, size_t, int, int, void*)</a> (4)</h1>
+<br/>
+<!-- content -->
+<table id='List' cellpadding='3' class='summary highlight'>
+<tr>
+<th class='sort' onclick='sort(this)' title='sort'>Used As</th>
+<th class='sort' onclick='sort(this)' title='sort'>Name</th>
+<th class='sort' onclick='sort(this)' title='sort'>Used In</th>
+</tr>
+<tr class='pointer' onclick="document.location='../symbols/ssh_pki_import_privkey_base64.html'">
+<td align='center' class='func'>
+PARAM</td>
+<td align='center' class='s'>
+<span class='prm'>auth_fn</span></td>
+<td class='s top'>
+ssh_pki_import_privkey_base64 (
+    char const* <span class='prm'>b64_key</span>,
+    char const* <span class='prm'>passphrase</span>,
+    ssh_auth_callback <span class='prm highlighted'>auth_fn</span>,
+    void* <span class='prm'>auth_data</span>,
+    ssh_key* <span class='prm'>pkey</span>
+) <a class='info' href='../symbols/ssh_pki_import_privkey_base64.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../symbols/ssh_pki_export_privkey_file.html'">
+<td align='center' class='func'>
+PARAM</td>
+<td align='center' class='s'>
+<span class='prm'>auth_fn</span></td>
+<td class='s top'>
+ssh_pki_export_privkey_file (
+    ssh_key const <span class='prm'>privkey</span>,
+    char const* <span class='prm'>passphrase</span>,
+    ssh_auth_callback <span class='prm highlighted'>auth_fn</span>,
+    void* <span class='prm'>auth_data</span>,
+    char const* <span class='prm'>filename</span>
+) <a class='info' href='../symbols/ssh_pki_export_privkey_file.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../symbols/ssh_pki_import_privkey_file.html'">
+<td align='center' class='func'>
+PARAM</td>
+<td align='center' class='s'>
+<span class='prm'>auth_fn</span></td>
+<td class='s top'>
+ssh_pki_import_privkey_file (
+    char const* <span class='prm'>filename</span>,
+    char const* <span class='prm'>passphrase</span>,
+    ssh_auth_callback <span class='prm highlighted'>auth_fn</span>,
+    void* <span class='prm'>auth_data</span>,
+    ssh_key* <span class='prm'>pkey</span>
+) <a class='info' href='../symbols/ssh_pki_import_privkey_file.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../types/7c763.html'">
+<td align='center' class='stack_param'>
+FIELD</td>
+<td align='center' class='s'>
+<span class='field'>.auth_function</span></td>
+<td class='s top'>struct ssh_callbacks_struct {
+    size_t <span class='prm'>size</span>,
+    void* <span class='prm'>userdata</span>,
+    ssh_auth_callback <span class='prm highlighted'>auth_function</span>,
+    ssh_log_callback <span class='prm'>log_function</span>,
+    void(*)(void*, float) <span class='prm'>connect_status_function</span>,
+    ssh_global_request_callback <span class='prm'>global_request_function</span>,
+    ssh_channel_open_request_x11_callback <span class='prm'>channel_open_request_x11_function</span>
+} <a class='info' href='../types/7c763.html'>&raquo;</a>
+</td>
+</tr>
+</table>
+<!-- content end -->
+<br/>
+<br/>
+<hr/>
+<div align='right'><a class='home' href='http://abi-laboratory.pro/'>Andrey Ponomarenko's ABI laboratory</a></div>
+<br/>
+</body>
+</html>

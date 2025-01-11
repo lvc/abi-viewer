@@ -1,0 +1,111 @@
+<!-- object:libssh.so.4.4.0;arch:x86_64;type:struct ssh_counter_struct;total:6 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="struct ssh_counter_struct, used, field, parameter, types, symbols" />
+    <meta name="description" content="Usage of type in the library" />
+    <link rel="stylesheet" type="text/css" href="../css/report.css" />
+    <script type="text/javascript" src="../js/sort.js"></script>
+    
+    <title>
+        Usage: struct ssh_counter_struct
+    </title>
+    
+    </head><body>
+<h1 align='center'>libssh.so 0.7.1 (x86_64)</h1><table cellpadding='0' cellspacing='0'><tr><td align='center'><h1 class='tool'><a href='http://abi-laboratory.pro/' class='tool'>ABI<br/>Viewer</a></h1></td><td width='40px'></td><td><a class='menu' href='../symbols.html'>Symbols</a></td><td><a class='menu' href='../types.html'>Types</a></td><td><a class='menu' href='../live-readelf.html'>Live Readelf</a></td></tr></table><hr/><br/><br/><h1 style='max-width:1024px; word-wrap:break-word;'>Type Usage:&nbsp;<a class='black' href='../types/41f8f.html'>ssh_counter_struct</a> (6)</h1>
+<br/>
+<!-- content -->
+<table id='List' cellpadding='3' class='summary highlight'>
+<tr>
+<th class='sort' onclick='sort(this)' title='sort'>Used As</th>
+<th class='sort' onclick='sort(this)' title='sort'>Name</th>
+<th class='sort' onclick='sort(this)' title='sort'>Used In</th>
+</tr>
+<tr class='pointer' onclick="document.location='../symbols/ssh_set_counters.html'">
+<td align='center' class='func'>
+PARAM</td>
+<td align='center' class='s'>
+<span class='prm'>rcounter</span></td>
+<td class='s top'>
+ssh_set_counters (
+    ssh_session <span class='prm'>session</span>,
+    ssh_counter <span class='prm'>scounter</span>,
+    ssh_counter <span class='prm highlighted'>rcounter</span>
+) <a class='info' href='../symbols/ssh_set_counters.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../symbols/ssh_set_counters.html'">
+<td align='center' class='func'>
+PARAM</td>
+<td align='center' class='s'>
+<span class='prm'>scounter</span></td>
+<td class='s top'>
+ssh_set_counters (
+    ssh_session <span class='prm'>session</span>,
+    ssh_counter <span class='prm highlighted'>scounter</span>,
+    ssh_counter <span class='prm'>rcounter</span>
+) <a class='info' href='../symbols/ssh_set_counters.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../symbols/ssh_channel_set_counter.html'">
+<td align='center' class='func'>
+PARAM</td>
+<td align='center' class='s'>
+<span class='prm'>counter</span></td>
+<td class='s top'>
+ssh_channel_set_counter (
+    ssh_channel <span class='prm'>channel</span>,
+    ssh_counter <span class='prm highlighted'>counter</span>
+) <a class='info' href='../symbols/ssh_channel_set_counter.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../types/31f40.html'">
+<td align='center' class='stack_param'>
+FIELD</td>
+<td align='center' class='s'>
+<span class='field'>.counter</span></td>
+<td class='s top'>struct ssh_channel_struct {
+    ...
+    enum ssh_channel_request_state_e <span class='prm'>request_state</span>,
+    ssh_channel_callbacks <span class='prm'>callbacks</span>,
+    ssh_counter <span class='prm highlighted'>counter</span>
+} <a class='info' href='../types/31f40.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../types/7df3b.html'">
+<td align='center' class='stack_param'>
+FIELD</td>
+<td align='center' class='s'>
+<span class='field'>.raw_counter</span></td>
+<td class='s top'>struct ssh_session_struct {
+    ...
+    anon-struct-session.h-178 <span class='prm'>opts</span>,
+    ssh_counter <span class='prm'>socket_counter</span>,
+    ssh_counter <span class='prm highlighted'>raw_counter</span>
+} <a class='info' href='../types/7df3b.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../types/7df3b.html'">
+<td align='center' class='stack_param'>
+FIELD</td>
+<td align='center' class='s'>
+<span class='field'>.socket_counter</span></td>
+<td class='s top'>struct ssh_session_struct {
+    ...
+    ssh_pcap_context <span class='prm'>pcap_ctx</span>,
+    anon-struct-session.h-178 <span class='prm'>opts</span>,
+    ssh_counter <span class='prm highlighted'>socket_counter</span>,
+    ssh_counter <span class='prm'>raw_counter</span>
+} <a class='info' href='../types/7df3b.html'>&raquo;</a>
+</td>
+</tr>
+</table>
+<!-- content end -->
+<br/>
+<br/>
+<hr/>
+<div align='right'><a class='home' href='http://abi-laboratory.pro/'>Andrey Ponomarenko's ABI laboratory</a></div>
+<br/>
+</body>
+</html>

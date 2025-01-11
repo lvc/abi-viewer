@@ -1,0 +1,133 @@
+<!-- object:libssh.so.4.4.0;arch:x86_64;type:enum ssh_keytypes_e;total:8 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="enum ssh_keytypes_e, used, field, parameter, types, symbols" />
+    <meta name="description" content="Usage of type in the library" />
+    <link rel="stylesheet" type="text/css" href="../css/report.css" />
+    <script type="text/javascript" src="../js/sort.js"></script>
+    
+    <title>
+        Usage: enum ssh_keytypes_e
+    </title>
+    
+    </head><body>
+<h1 align='center'>libssh.so 0.7.1 (x86_64)</h1><table cellpadding='0' cellspacing='0'><tr><td align='center'><h1 class='tool'><a href='http://abi-laboratory.pro/' class='tool'>ABI<br/>Viewer</a></h1></td><td width='40px'></td><td><a class='menu' href='../symbols.html'>Symbols</a></td><td><a class='menu' href='../types.html'>Types</a></td><td><a class='menu' href='../live-readelf.html'>Live Readelf</a></td></tr></table><hr/><br/><br/><h1 style='max-width:1024px; word-wrap:break-word;'>Type Usage:&nbsp;<a class='black' href='../types/51c19.html'>ssh_keytypes_e</a> (8)</h1>
+<br/>
+<!-- content -->
+<table id='List' cellpadding='3' class='summary highlight'>
+<tr>
+<th class='sort' onclick='sort(this)' title='sort'>Used As</th>
+<th class='sort' onclick='sort(this)' title='sort'>Name</th>
+<th class='sort' onclick='sort(this)' title='sort'>Used In</th>
+</tr>
+<tr class='pointer' onclick="document.location='../symbols/ssh_pki_import_pubkey_base64.html'">
+<td align='center' class='func'>
+PARAM</td>
+<td align='center' class='s'>
+<span class='prm'>type</span></td>
+<td class='s top'>
+ssh_pki_import_pubkey_base64 (
+    char const* <span class='prm'>b64_key</span>,
+    enum ssh_keytypes_e <span class='prm highlighted'>type</span>,
+    ssh_key* <span class='prm'>pkey</span>
+) <a class='info' href='../symbols/ssh_pki_import_pubkey_base64.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../symbols/ssh_pki_generate.html'">
+<td align='center' class='func'>
+PARAM</td>
+<td align='center' class='s'>
+<span class='prm'>type</span></td>
+<td class='s top'>
+ssh_pki_generate (
+    enum ssh_keytypes_e <span class='prm highlighted'>type</span>,
+    int <span class='prm'>parameter</span>,
+    ssh_key* <span class='prm'>pkey</span>
+) <a class='info' href='../symbols/ssh_pki_generate.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../symbols/ssh_key_type_to_char.html'">
+<td align='center' class='func'>
+PARAM</td>
+<td align='center' class='s'>
+<span class='prm'>type</span></td>
+<td class='s top'>
+ssh_key_type_to_char (
+    enum ssh_keytypes_e <span class='prm highlighted'>type</span>
+) <a class='info' href='../symbols/ssh_key_type_to_char.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../symbols/ssh_privatekey_type.html'">
+<td align='center' class='return'>
+RETURN</td>
+<td align='center' class='s'>
+</td>
+<td class='s top'>ssh_privatekey_type (
+    ssh_private_key <span class='prm'>privatekey</span>
+) <a class='info' href='../symbols/ssh_privatekey_type.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../symbols/ssh_key_type_from_name.html'">
+<td align='center' class='return'>
+RETURN</td>
+<td align='center' class='s'>
+</td>
+<td class='s top'>ssh_key_type_from_name (
+    char const* <span class='prm'>name</span>
+) <a class='info' href='../symbols/ssh_key_type_from_name.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../symbols/ssh_key_type.html'">
+<td align='center' class='return'>
+RETURN</td>
+<td align='center' class='s'>
+</td>
+<td class='s top'>ssh_key_type (
+    ssh_key const <span class='prm'>key</span>
+) <a class='info' href='../symbols/ssh_key_type.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../types/ceefa.html'">
+<td align='center' class='stack_param'>
+FIELD</td>
+<td align='center' class='s'>
+<span class='field'>.type</span></td>
+<td class='s top'>struct ssh_key_struct {
+    enum ssh_keytypes_e <span class='prm highlighted'>type</span>,
+    int <span class='prm'>flags</span>,
+    char const* <span class='prm'>type_c</span>,
+    int <span class='prm'>ecdsa_nid</span>,
+    DSA* <span class='prm'>dsa</span>,
+    RSA* <span class='prm'>rsa</span>,
+    EC_KEY* <span class='prm'>ecdsa</span>,
+    ed25519_pubkey* <span class='prm'>ed25519_pubkey</span>,
+    ed25519_privkey* <span class='prm'>ed25519_privkey</span>,
+    void* <span class='prm'>cert</span>
+} <a class='info' href='../types/ceefa.html'>&raquo;</a>
+</td>
+</tr>
+<tr class='pointer' onclick="document.location='../types/09fe2.html'">
+<td align='center' class='stack_param'>
+FIELD</td>
+<td align='center' class='s'>
+<span class='field'>.hostkey</span></td>
+<td class='s top'>anon-struct-session.h-155 {
+    ssh_key <span class='prm'>rsa_key</span>,
+    ssh_key <span class='prm'>dsa_key</span>,
+    ssh_key <span class='prm'>ecdsa_key</span>,
+    ssh_key <span class='prm'>ed25519_key</span>,
+    enum ssh_keytypes_e <span class='prm highlighted'>hostkey</span>
+} <a class='info' href='../types/09fe2.html'>&raquo;</a>
+</td>
+</tr>
+</table>
+<!-- content end -->
+<br/>
+<br/>
+<hr/>
+<div align='right'><a class='home' href='http://abi-laboratory.pro/'>Andrey Ponomarenko's ABI laboratory</a></div>
+<br/>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!-- object:libssh.so.4.4.0;arch:x86_64;type:struct sftp_session_struct -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="struct sftp_session_struct, fields, layout, memory, offset, size, usage" />
+    <meta name="description" content="Fields and memory layout" />
+    <link rel="stylesheet" type="text/css" href="../css/report.css" />
+    <script type="text/javascript" src="../js/sort.js"></script>
+    
+    <title>
+        Type: struct sftp_session_struct
+    </title>
+    
+    </head><body>
+<h1 align='center'>libssh.so 0.7.1 (x86_64)</h1><table cellpadding='0' cellspacing='0'><tr><td align='center'><h1 class='tool'><a href='http://abi-laboratory.pro/' class='tool'>ABI<br/>Viewer</a></h1></td><td width='40px'></td><td><a class='menu' href='../symbols.html'>Symbols</a></td><td><a class='menu' href='../types.html'>Types</a></td><td><a class='menu' href='../live-readelf.html'>Live Readelf</a></td></tr></table><hr/><br/><br/><h1 style='max-width:1024px; word-wrap:break-word;'>Type:&nbsp;sftp_session_struct</h1>
+<br/>
+<!-- content -->
+<table class='contents'><tr><td><b>Contents</b></td></tr><tr><td><a href='#Info'>Info</a></td></tr><tr><td><a href='#Fields'>Fields</a></td></tr>
+<tr><td><a href='#Layout'>Memory Layout</a></td></tr>
+</table><h2 id='Info'>Info</h2>
+<table cellpadding='3' class='summary short'>
+<tr>
+<th>Name</th>
+<td>sftp_session_struct</td></tr>
+<tr>
+<th>Type</th>
+<td class='struct'>STRUCT</td></tr>
+<tr>
+<th>Fields</th>
+<td><a href='#Fields'>10</a></td>
+</tr>
+<tr>
+<th>Source</th>
+<td>sftp.h</td>
+</tr>
+<tr>
+<th>Size</th>
+<td>64</td>
+</tr>
+<tr>
+<th>Usage</th>
+<td>The type is used by <a href='../usage/07e8e.html'>31</a> symbols and <a href='../usage/07e8e.html'>4</a> types.</td>
+</tr>
+</table>
+<p></p>
+<h2 id='Fields'>Fields</h2>
+<table class='summary stack_legend' cellpadding='0' cellspacing='0'><tr><td class='padding'>PADDING</td><td class='stack_param'>FIELD</td></tr><tr><td class='bitfield'>BIT-FIELD</td><td></td></tr></table><p></p><table cellpadding='3' class='summary'>
+<tr><th>Pos</th><th>Name</th><th>Type</th><th>Size</th><th>Offset</th></tr>
+<tr><td>0</td><td><span class='field'>session</span></td><td class='field_type'><a href='../types/91cd2.html' title='typedef to struct ssh_session_struct*'>ssh_session</a></td><td>8</td><td>0</td></tr>
+<tr><td>1</td><td><span class='field'>channel</span></td><td class='field_type'><a href='../types/d8a23.html' title='typedef to struct ssh_channel_struct*'>ssh_channel</a></td><td>8</td><td>8</td></tr>
+<tr><td>2</td><td><span class='field'>server_version</span></td><td class='field_type'>int</td><td>4</td><td>16</td></tr>
+<tr><td>3</td><td><span class='field'>client_version</span></td><td class='field_type'>int</td><td>4</td><td>20</td></tr>
+<tr><td>4</td><td><span class='field'>version</span></td><td class='field_type'>int</td><td>4</td><td>24</td></tr>
+<tr><td>5</td><td><span class='field'>queue</span></td><td class='field_type'><a href='../types/c0a5d.html' title='typedef to struct sftp_request_queue_struct*'>sftp_request_queue</a></td><td>8</td><td>32</td></tr>
+<tr><td>6</td><td><span class='field'>id_counter</span></td><td class='field_type'><a href='../types/5dfbd.html' title='typedef to unsigned int'>uint32_t</a></td><td>4</td><td>40</td></tr>
+<tr><td>7</td><td><span class='field'>errnum</span></td><td class='field_type'>int</td><td>4</td><td>44</td></tr>
+<tr><td>8</td><td><span class='field'>handles</span></td><td class='field_type'>void**</td><td>8</td><td>48</td></tr>
+<tr><td>9</td><td><span class='field'>ext</span></td><td class='field_type'><a href='../types/c1ed7.html' title='typedef to struct sftp_ext_struct*'>sftp_ext</a></td><td>8</td><td>56</td></tr>
+</table><p></p>
+<h2 id='Layout'>Memory Layout</h2>
+<table cellpadding='3' class='stack_frame'>
+<tr><th>Offset</th><th>Contents</th><th>Type</th></tr>
+<tr>
+<td class='stack_offset'>0</td><td class='stack_value stack_param'><span class='prm'>.session</span></td><td class='stack_value' style='height:160px'><a href='../types/91cd2.html' title='typedef to struct ssh_session_struct*'>ssh_session</a></td></tr>
+<tr>
+<td class='stack_offset'>8</td><td class='stack_value stack_param'><span class='prm'>.channel</span></td><td class='stack_value' style='height:160px'><a href='../types/d8a23.html' title='typedef to struct ssh_channel_struct*'>ssh_channel</a></td></tr>
+<tr>
+<td class='stack_offset'>16</td><td class='stack_value stack_param'><span class='prm'>.server_version</span></td><td class='stack_value' style='height:80px'>int</td></tr>
+<tr>
+<td class='stack_offset'>20</td><td class='stack_value stack_param'><span class='prm'>.client_version</span></td><td class='stack_value' style='height:80px'>int</td></tr>
+<tr>
+<td class='stack_offset'>24</td><td class='stack_value stack_param'><span class='prm'>.version</span></td><td class='stack_value' style='height:80px'>int</td></tr>
+<tr>
+<td class='stack_offset'>28</td><td class='stack_value padding'>padding</td><td class='stack_value' style='height:80px'></td></tr>
+<tr>
+<td class='stack_offset'>32</td><td class='stack_value stack_param'><span class='prm'>.queue</span></td><td class='stack_value' style='height:160px'><a href='../types/c0a5d.html' title='typedef to struct sftp_request_queue_struct*'>sftp_request_queue</a></td></tr>
+<tr>
+<td class='stack_offset'>40</td><td class='stack_value stack_param'><span class='prm'>.id_counter</span></td><td class='stack_value' style='height:80px'><a href='../types/5dfbd.html' title='typedef to unsigned int'>uint32_t</a></td></tr>
+<tr>
+<td class='stack_offset'>44</td><td class='stack_value stack_param'><span class='prm'>.errnum</span></td><td class='stack_value' style='height:80px'>int</td></tr>
+<tr>
+<td class='stack_offset'>48</td><td class='stack_value stack_param'><span class='prm'>.handles</span></td><td class='stack_value' style='height:160px'>void**</td></tr>
+<tr>
+<td class='stack_offset'>56</td><td class='stack_value stack_param'><span class='prm'>.ext</span></td><td class='stack_value' style='height:160px'><a href='../types/c1ed7.html' title='typedef to struct sftp_ext_struct*'>sftp_ext</a></td></tr>
+</table>
+<p></p>
+<!-- content end -->
+<br/>
+<br/>
+<hr/>
+<div align='right'><a class='home' href='http://abi-laboratory.pro/'>Andrey Ponomarenko's ABI laboratory</a></div>
+<br/>
+</body>
+</html>

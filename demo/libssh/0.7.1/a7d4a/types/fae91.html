@@ -1,0 +1,96 @@
+<!-- object:libssh.so.4.4.0;arch:x86_64;type:struct ssh_server_callbacks_struct -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="struct ssh_server_callbacks_struct, fields, layout, memory, offset, size, usage" />
+    <meta name="description" content="Fields and memory layout" />
+    <link rel="stylesheet" type="text/css" href="../css/report.css" />
+    <script type="text/javascript" src="../js/sort.js"></script>
+    
+    <title>
+        Type: struct ssh_server_callbacks_struct
+    </title>
+    
+    </head><body>
+<h1 align='center'>libssh.so 0.7.1 (x86_64)</h1><table cellpadding='0' cellspacing='0'><tr><td align='center'><h1 class='tool'><a href='http://abi-laboratory.pro/' class='tool'>ABI<br/>Viewer</a></h1></td><td width='40px'></td><td><a class='menu' href='../symbols.html'>Symbols</a></td><td><a class='menu' href='../types.html'>Types</a></td><td><a class='menu' href='../live-readelf.html'>Live Readelf</a></td></tr></table><hr/><br/><br/><h1 style='max-width:1024px; word-wrap:break-word;'>Type:&nbsp;ssh_server_callbacks_struct</h1>
+<br/>
+<!-- content -->
+<table class='contents'><tr><td><b>Contents</b></td></tr><tr><td><a href='#Info'>Info</a></td></tr><tr><td><a href='#Fields'>Fields</a></td></tr>
+<tr><td><a href='#Layout'>Memory Layout</a></td></tr>
+</table><h2 id='Info'>Info</h2>
+<table cellpadding='3' class='summary short'>
+<tr>
+<th>Name</th>
+<td>ssh_server_callbacks_struct</td></tr>
+<tr>
+<th>Type</th>
+<td class='struct'>STRUCT</td></tr>
+<tr>
+<th>Fields</th>
+<td><a href='#Fields'>11</a></td>
+</tr>
+<tr>
+<th>Source</th>
+<td>callbacks.h</td>
+</tr>
+<tr>
+<th>Size</th>
+<td>88</td>
+</tr>
+<tr>
+<th>Usage</th>
+<td>The type is used by <a href='../usage/fae91.html'>1</a> symbol and <a href='../usage/fae91.html'>1</a> type.</td>
+</tr>
+</table>
+<p></p>
+<h2 id='Fields'>Fields</h2>
+<table class='summary stack_legend' cellpadding='0' cellspacing='0'><tr><td class='padding'>PADDING</td><td class='stack_param'>FIELD</td></tr><tr><td class='bitfield'>BIT-FIELD</td><td></td></tr></table><p></p><table cellpadding='3' class='summary'>
+<tr><th>Pos</th><th>Name</th><th>Type</th><th>Size</th><th>Offset</th></tr>
+<tr><td>0</td><td><span class='field'>size</span></td><td class='field_type'>size_t</td><td>8</td><td>0</td></tr>
+<tr><td>1</td><td><span class='field'>userdata</span></td><td class='field_type'>void*</td><td>8</td><td>8</td></tr>
+<tr><td>2</td><td><span class='field'>auth_password_function</span></td><td class='field_type'><a href='../types/99cac.html' title='typedef to int(*)(ssh_session, char const*, char const*, void*)'>ssh_auth_password_callback</a></td><td>8</td><td>16</td></tr>
+<tr><td>3</td><td><span class='field'>auth_none_function</span></td><td class='field_type'><a href='../types/b0757.html' title='typedef to int(*)(ssh_session, char const*, void*)'>ssh_auth_none_callback</a></td><td>8</td><td>24</td></tr>
+<tr><td>4</td><td><span class='field'>auth_gssapi_mic_function</span></td><td class='field_type'><a href='../types/81491.html' title='typedef to int(*)(ssh_session, char const*, char const*, void*)'>ssh_auth_gssapi_mic_callback</a></td><td>8</td><td>32</td></tr>
+<tr><td>5</td><td><span class='field'>auth_pubkey_function</span></td><td class='field_type'><a href='../types/e420a.html' title='typedef to int(*)(ssh_session, char const*, struct ssh_key_struct*, char, void*)'>ssh_auth_pubkey_callback</a></td><td>8</td><td>40</td></tr>
+<tr><td>6</td><td><span class='field'>service_request_function</span></td><td class='field_type'><a href='../types/1c020.html' title='typedef to int(*)(ssh_session, char const*, void*)'>ssh_service_request_callback</a></td><td>8</td><td>48</td></tr>
+<tr><td>7</td><td><span class='field'>channel_open_request_session_function</span></td><td class='field_type'><a href='../types/e8c9d.html' title='typedef to ssh_channel(*)(ssh_session, void*)'>ssh_channel_open_request_session_callback</a></td><td>8</td><td>56</td></tr>
+<tr><td>8</td><td><span class='field'>gssapi_select_oid_function</span></td><td class='field_type'><a href='../types/c5242.html' title='typedef to ssh_string(*)(ssh_session, char const*, int, ssh_string*, void*)'>ssh_gssapi_select_oid_callback</a></td><td>8</td><td>64</td></tr>
+<tr><td>9</td><td><span class='field'>gssapi_accept_sec_ctx_function</span></td><td class='field_type'><a href='../types/52bd2.html' title='typedef to int(*)(ssh_session, ssh_string, ssh_string*, void*)'>ssh_gssapi_accept_sec_ctx_callback</a></td><td>8</td><td>72</td></tr>
+<tr><td>10</td><td><span class='field'>gssapi_verify_mic_function</span></td><td class='field_type'><a href='../types/f5553.html' title='typedef to int(*)(ssh_session, ssh_string, void*, size_t, void*)'>ssh_gssapi_verify_mic_callback</a></td><td>8</td><td>80</td></tr>
+</table><p></p>
+<h2 id='Layout'>Memory Layout</h2>
+<table cellpadding='3' class='stack_frame'>
+<tr><th>Offset</th><th>Contents</th><th>Type</th></tr>
+<tr>
+<td class='stack_offset'>0</td><td class='stack_value stack_param'><span class='prm'>.size</span></td><td class='stack_value' style='height:160px'>size_t</td></tr>
+<tr>
+<td class='stack_offset'>8</td><td class='stack_value stack_param'><span class='prm'>.userdata</span></td><td class='stack_value' style='height:160px'>void*</td></tr>
+<tr>
+<td class='stack_offset'>16</td><td class='stack_value stack_param'><span class='prm'>.auth_password_function</span></td><td class='stack_value' style='height:160px'><a href='../types/99cac.html' title='typedef to int(*)(ssh_session, char const*, char const*, void*)'>ssh_auth_password_callback</a></td></tr>
+<tr>
+<td class='stack_offset'>24</td><td class='stack_value stack_param'><span class='prm'>.auth_none_function</span></td><td class='stack_value' style='height:160px'><a href='../types/b0757.html' title='typedef to int(*)(ssh_session, char const*, void*)'>ssh_auth_none_callback</a></td></tr>
+<tr>
+<td class='stack_offset'>32</td><td class='stack_value stack_param'><span class='prm'>.auth_gssapi_mic_function</span></td><td class='stack_value' style='height:160px'><a href='../types/81491.html' title='typedef to int(*)(ssh_session, char const*, char const*, void*)'>ssh_auth_gssapi_mic_callback</a></td></tr>
+<tr>
+<td class='stack_offset'>40</td><td class='stack_value stack_param'><span class='prm'>.auth_pubkey_function</span></td><td class='stack_value' style='height:160px'><a href='../types/e420a.html' title='typedef to int(*)(ssh_session, char const*, struct ssh_key_struct*, char, void*)'>ssh_auth_pubkey_callback</a></td></tr>
+<tr>
+<td class='stack_offset'>48</td><td class='stack_value stack_param'><span class='prm'>.service_request_function</span></td><td class='stack_value' style='height:160px'><a href='../types/1c020.html' title='typedef to int(*)(ssh_session, char const*, void*)'>ssh_service_request_callback</a></td></tr>
+<tr>
+<td class='stack_offset'>56</td><td class='stack_value stack_param'><span class='prm'>.channel_open_request_session_function</span></td><td class='stack_value' style='height:160px'><a href='../types/e8c9d.html' title='typedef to ssh_channel(*)(ssh_session, void*)'>ssh_channel_open_request_session_callback</a></td></tr>
+<tr>
+<td class='stack_offset'>64</td><td class='stack_value stack_param'><span class='prm'>.gssapi_select_oid_function</span></td><td class='stack_value' style='height:160px'><a href='../types/c5242.html' title='typedef to ssh_string(*)(ssh_session, char const*, int, ssh_string*, void*)'>ssh_gssapi_select_oid_callback</a></td></tr>
+<tr>
+<td class='stack_offset'>72</td><td class='stack_value stack_param'><span class='prm'>.gssapi_accept_sec_ctx_function</span></td><td class='stack_value' style='height:160px'><a href='../types/52bd2.html' title='typedef to int(*)(ssh_session, ssh_string, ssh_string*, void*)'>ssh_gssapi_accept_sec_ctx_callback</a></td></tr>
+<tr>
+<td class='stack_offset'>80</td><td class='stack_value stack_param'><span class='prm'>.gssapi_verify_mic_function</span></td><td class='stack_value' style='height:160px'><a href='../types/f5553.html' title='typedef to int(*)(ssh_session, ssh_string, void*, size_t, void*)'>ssh_gssapi_verify_mic_callback</a></td></tr>
+</table>
+<p></p>
+<!-- content end -->
+<br/>
+<br/>
+<hr/>
+<div align='right'><a class='home' href='http://abi-laboratory.pro/'>Andrey Ponomarenko's ABI laboratory</a></div>
+<br/>
+</body>
+</html>
